@@ -5,9 +5,12 @@ class Calc:
     # 이곳에 코드를 작성
     def getDivide(self, a, b):
         return a / b
-    pass
 
 # 테스트 케이스 작성
 def test_sample():
     assert 1 == 1
     pytest.fail()
+
+def test_divide():
+    calc = Calc()
+    assert calc.getDivide(6, 2) == 3
