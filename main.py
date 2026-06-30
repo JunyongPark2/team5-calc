@@ -25,11 +25,9 @@ class Calc:
 
 
 # 테스트 케이스 작성
-def test_sample():
+def test_gop():
     assert Calc().getGop(2,3) == 6
 
-    assert 1 == 1
-    pytest.fail()
 def test_sum():
     assert Calc().getSum(3,5) == 8
 
