@@ -3,7 +3,9 @@ import pytest
 
 class Calc:
     # 이곳에 코드를 작성
-    pass
+
+    def getGop(self,a, b):
+        return a * b
 
 # 테스트 케이스 작성
 def test_sample():
