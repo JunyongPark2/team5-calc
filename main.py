@@ -1,7 +1,10 @@
 import pytest
 
 class Calc:
-    # 이곳에 코드를 작성      
+    # 이곳에 코드를 작성
+    def getSum(self, a, b):
+        return a + b
+
     def getDivide(self, a, b):
         return a / b
 
@@ -20,6 +23,8 @@ def test_sample():
 
     assert 1 == 1
     pytest.fail()
+def test_sum():
+    assert Calc().getSum(3,5) == 8
 
 def test_divide():
     calc = Calc()
