@@ -11,11 +11,7 @@ class Calc:
 
 # 테스트 케이스 작성
 def test_sample():
+    assert Calc().getSum(3, 5) == 8
+
     assert 1 == 1
     pytest.fail()
-
-
-def test_sample_getSum():
-    calc = Calc()
-    # 3과 5를 더했을 때 결과가 8이 되는지 검증
-    assert calc.getSum(3, 5) == 8
